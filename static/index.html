@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Univerity Meal Order</title>
+    <style>
+        body{
+            background-color:gainsboro;
+        }
+        .txt{
+           position:absolute;
+           left: 50px;
+           width: 200px;
+        }
+        .txt-input{
+           position:relative;
+           left: 150px;
+           width: 200px;        
+        }
+        h3{
+            text-decoration:underline;
+            position:relative;
+            left:50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="/" method="POST" id="form">
+            <div>
+                <label class="txt" for="name">Name:</label>
+                <input class="txt-input" type="text" class="form-control" name="NAME"></input>
+            </div>
+            <div>
+                <label class="txt" for="id">University ID:</label> 
+                <input class="txt-input" type="text" class="form-control" name="ID"></input>
+            </div>
+            <div>
+                <h3>Main</h3>
+                <input type="radio" id="hamburger" name="MEAL" value="hamburger">
+                <label for="hamburger">Hamburger</label><br>
+                <input type="radio" id="sandwich" name="MEAL" value="sandwich">
+                <label for="turkey">Turkey Sandwich</label><br>
+                <input type="radio" id="vegetable" name="MEAL" value="vegetable">
+                <label for="vegetable">Vegetable Wrap</label><br><br>
+            </div>
+            <div>
+                <h3>Side</h3>
+                <input type="radio" id="fries" name="SIDE" value="fries">
+                <label for="side">Fries</label><br>
+                <input type="radio" id="sandwich" name="SIDE" value="sandwich">
+                <label for="side">Chips</label><br>
+                <input type="radio" id="fruit" name="SIDE" value="friut">
+                <label for="fruit">Fruit Salad</label><br><br>
+            </div>
+            <h3>Beverage</h3>
+                <input type="radio" id="soda" name="DRINK" value="soda">
+                <label for="drink">Soda</label><br>
+                <input type="radio" id="water" name="DRINK" value="water">
+                <label for="drink">Water</label><br>
+                <input type="radio" id="milk" name="DRINK" value="milk">
+                <label for="drink">Milk</label><br><hr>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
